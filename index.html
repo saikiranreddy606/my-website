@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet" />
+  <!-- External Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ── NAVBAR (Bootstrap component) ── -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Sai Kiran</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ── HERO ── -->
+  <section class="hero d-flex align-items-center" id="home">
+    <div class="container text-center">
+      <div class="avatar-wrapper mx-auto mb-4">
+        <!-- Replace the src with your actual photo URL or upload photo.jpg to the repo -->
+        <img src="https://api.dicebear.com/7.x/initials/svg?seed=SK&backgroundColor=1a1a2e&radius=50"
+             alt="Profile Photo" class="avatar-img" />
+      </div>
+      <h1 class="hero-name">Sai Kiran</h1>
+      <p class="hero-role">Analog Engineer</p>
+      <p class="hero-bio">
+        Hi!I'm Sai Kiran,an aspiring Analog Engineer with a strong foundation in CMOS Design,VHDL coding.
+        I love solving  hardware challenges and optimizing designs for low power consumption areas.
+      </p>
+      <a href="#projects" class="btn btn-primary-custom mt-3">View My Work</a>
+    </div>
+  </section>
+
+  <!-- ── ABOUT ── -->
+  <section class="section-pad" id="about">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="row align-items-center g-5">
+        <div class="col-md-5 text-center">
+          <img src="https://api.dicebear.com/7.x/initials/svg?seed=SK&backgroundColor=1a1a2e&radius=10"
+               alt="About Photo" class="about-img" />
+        </div>
+        <div class="col-md-7">
+          <p class="about-text">
+            I'm <strong>Sai Kiran</strong>, currently pursuing B.Tech in ECE.
+            I'm a Analog Hardware enthusiast focused on VLSI,analog circuit
+            design,and hardware veriication.I'm driven by the challenge of 
+            designing tiny chips that power the modern world.
+          </p>
+          <ul class="info-list">
+            <li><span>🎓 Degree:</span> B.Tech — ECE</li>
+            <li><span>📍 Location:</span> Hyderabad, India</li>
+            <li><span>📧 Email:</span> ksaikiran@gmail.com</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SKILLS ── -->
+  <section class="section-pad bg-alt" id="skills">
+    <div class="container">
+      <h2 class="section-title">Skills</h2>
+      <div class="row g-4">
+        <!-- Bootstrap Cards component -->
+        <div class="col-sm-6 col-md-4">
+          <div class="skill-card card h-100">
+            <div class="card-body text-center">
+              <div class="skill-icon">🌐</div>
+              <h5 class="card-title"> &amp;VHDL UVM</h5>
+              <div class="progress mt-3">
+                <div class="progress-bar" role="progressbar" style="width: 85%" data-value="85">85%</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="skill-card card h-100">
+            <div class="card-body text-center">
+              <div class="skill-icon">⚡</div>
+              <h5 class="card-title">System Verilog</h5>
+              <div class="progress mt-3">
+                <div class="progress-bar" role="progressbar" style="width: 70%" data-value="70">70%</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="skill-card card h-100">
+            <div class="card-body text-center">
+              <div class="skill-icon">🅱️</div>
+              <h5 class="card-title">Synopsys Tool</h5>
+              <div class="progress mt-3">
+                <div class="progress-bar" role="progressbar" style="width: 80%" data-value="80">80%</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PROJECTS ── -->
+  <section class="section-pad" id="projects">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="project-card card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Design of UART</h5>
+              <p class="card-text">To enable serial communication between a computer and a peripheral device implemented on FPGAs using verilog.</p>
+              <a href="#" class="btn btn-outline-custom">View Project</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="project-card card h-100">
+            <div class="card-body">
+              <h5 class="card-title">DSP Accelerators</h5>
+              <p class="card-text">Implementing reconfigurable FFT processors with high throughput for 5G applications.</p>
+              <a href="#" class="btn btn-outline-custom">View Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ── (with JS form validation) -->
+  <section class="section-pad bg-alt" id="contact">
+    <div class="container">
+      <h2 class="section-title">Contact Me</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-7">
+          <div class="contact-form-wrap">
+            <div class="mb-3">
+              <label class="form-label">Your Name</label>
+              <input type="text" id="contactName" class="form-control" placeholder="John Doe" />
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Your Email</label>
+              <input type="email" id="contactEmail" class="form-control" placeholder="john@example.com" />
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Message</label>
+              <textarea id="contactMsg" class="form-control" rows="4" placeholder="Hello! I'd like to..."></textarea>
+            </div>
+            <button id="sendBtn" class="btn btn-primary-custom w-100">Send Message</button>
+            <div id="formFeedback" class="mt-3 text-center fw-bold"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer text-center">
+    <p>© 2025 Your Name · Built with ❤️ &amp; GitHub Pages</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- External Script -->
+  <script src="script.js"></script>
+</body>
+</html>
